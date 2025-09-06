@@ -1,0 +1,64 @@
+:: StoryTitle
+Interactive Intro — Fouad
+
+
+:: StoryData
+{
+  "ifid": "A10D6A0C-2D13-4940-9030-2E4BC45649FE",
+  "format": "Harlowe",
+  "format-version": "3.3.9",
+  "start": "Start",
+  "zoom": 1
+}
+
+
+:: Animal {"position":"700,100","size":"100,100"}
+
+<div class="screen bg-animal">
+  <h2>My Favorite Animal</h2>
+  <p>My favorite animal is <strong>Cats</strong>.</p>
+  <img src="https://images.unsplash.com/photo-1518791841217-8f162f1e1131?q=80&auto=format&fit=crop&w=1200" alt="cats">
+  <p>[[Home->Start]] • [[My Hobby->Hobby]] • [[My Major->Major]]</p>
+</div>
+  
+
+
+:: Hobby {"position":"300,100","size":"100,100"}
+
+<div class="screen bg-hobby">
+  <h2>My Favorite Hobby</h2>
+  <p>I love <strong>playing chess</strong>.</p>
+<img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Chess_board_opening_staunton.jpg" alt="Chess board">
+
+  <p>[[Home->Start]] • [[My Major->Major]] • [[My Favorite Animal->Animal]]</p>
+</div>
+  (enchant:?page,(bg:cyan))
+
+
+:: Major {"position":"500,100","size":"100,100"}
+
+<div class="screen bg-major">
+  <h2>My Major</h2>
+  <p>I'm majoring in <strong>Computer</strong>.</p>
+  <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&auto=format&fit=crop&w=1200" alt="Computers / servers">
+  <p>[[Home->Start]] • [[My Hobby->Hobby]] • [[My Favorite Animal->Animal]]</p>
+</div>
+  (enchant:?page,(bg:white))(enchant:?page,(bg:orange))
+
+
+:: Start {"position":"100,100","size":"100,100"}
+
+<div class="screen bg-intro">
+  <h1>Hi, I'm <em>Fouad</em>!</h1>
+  <p>Welcome to my interactive intro. Use the links below to learn about my favorite hobby, my major, and my favorite animal.</p>
+  <ul>
+    <li>[[My Hobby->Hobby]]</li>
+    <li>[[My Major->Major]]</li>
+    <li>[[My Favorite Animal->Animal]]</li>
+  </ul>
+</div>
+  (enchant:?page,(bg:green))
+
+
+:: Untitled Passage {"position":"1325,425","size":"100,100"}
+
